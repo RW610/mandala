@@ -12,7 +12,7 @@ let round = function (num = 1, x = 1) {
 }
 
 randomColor = function (x = 1) {
-  return 'hsla(' + (Math.random() * 360) + ', 50%, 50%, ' + x + ')'
+  return 'hsla(' + (Math.random() * 360) + ', 75%, 50%, ' + x + ')'
 }
 blackColor = function (x = 1) {
   return 'hsla(' + (Math.random() * 360) + ', 0%, 0%, ' + x + ')'
