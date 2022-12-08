@@ -40,32 +40,34 @@ class pixel {
     if (this.x < 0 || this.x > R) {
       this.xSpeed = -this.xSpeed
       ctx.fillStyle = randomColor(a)
-      a *= 5 / 6
-      //this.xSpeed *= .9
-      //ang *= 1.1//rand(.1) - .05
-      this.size *= 10 / 9
+      a *= .815
+      //this.xSpeed *= .815
+      //ang *= 1.15
+      this.size *= 1.15
     }
     if (this.y < 0 || this.y > R) {
       this.ySpeed = -this.ySpeed
       ctx.fillStyle = randomColor(a)
-      a *= 5 / 6
-      //this.ySpeed *= .9
-      //ang *= 1.1//rand(.1) - .05
-      this.size *= 10 / 9
+      a *= .815
+      //this.ySpeed *= .815
+      //ang *= 1.15
+      this.size *= 1.15
     }
   }
 }
 
-ctx.translate(540, 540)                                      //смещает центр вращения
+ctx.translate(540, 540)    
 
-let R = 380
+let R = 250
 size = 1
 let a = 1
-let ang = 2 * Math.PI / round(rand(1), 2)                    //угол поворота  rand(Math.PI * 2) 
+let ang = rand(Math.PI * 2)  
 let point = new pixel()
 ctx.fillStyle = randomColor(a)
 
-while (a > 0.01) {
+//setInterval(function () {
+while (a > 0.0075) {
+  //while (size < 1.2) {
   point.draw()
   point.bounce()
   point.move()
