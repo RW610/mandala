@@ -56,7 +56,7 @@ class pixel {
   }
 }
 
-ctx.translate(540, 540)    //смещает центр вращения
+ctx.translate(540, 540)                                      //смещает центр вращения
 
 let R = 380
 size = 1
@@ -65,28 +65,9 @@ let ang = 2 * Math.PI / round(rand(1), 2)                    //угол пово
 let point = new pixel()
 ctx.fillStyle = randomColor(a)
 
-//setInterval(function () {
 while (a > 0.01) {
   point.draw()
   point.bounce()
   point.move()
-
-  //ctx.clearRect(-960, -540, width, height)
 }
-  //a = 1
-//}, 1)
-
-//R = 400
-//a = .5
-//size = 2
-//ang = 2 * Math.PI / round(rand(1), 2)                    //угол поворота  rand(Math.PI * 2)
-//point = new pixel()
-
-//while (a > 0.01) {
-  //ctx.fillStyle = blackColor(a)
-  //point.draw()
-  //point.bounce()
-  //point.move()
-//}
-
-
+ 
