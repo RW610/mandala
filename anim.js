@@ -56,7 +56,7 @@ class pixel {
   }
 }
 
-ctx.translate(540, 540)    
+ctx.translate(500, 500)    
 
 let R = 250
 size = 1
